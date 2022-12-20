@@ -337,7 +337,7 @@ body {
   padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.tab--active {
   background: #F0F0F4;
   border-radius: 5px;
   font-family: 'SFProDisplay-Bold', sans-serif;
@@ -348,7 +348,7 @@ body {
   display: none;
 }
 
-.search__content-item--active {
+.tabs-content--active {
   display: block;
 }
 

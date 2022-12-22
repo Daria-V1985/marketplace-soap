@@ -436,3 +436,44 @@ body {
   line-height: 17px;
   color: #C4C4C4;
 }
+
+.product-item__wrapper {
+  position: relative;
+  width: 271px;
+}
+
+.product-item {
+  border: 1px solid hsba(0, 0%, 80%, 1);
+  border-radius: 3px;
+  text-align: center;
+  padding: 52px 20px 31px;
+}
+
+.product-item__title {
+  font-weight: normal;
+  padding: 14px 0 25px;
+}
+
+.product-item__favorite {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  width: 24px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+.product-item__favorite::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background-image: url('../images/heart.svg');
+}
+
+.product-item__favorite--active::before {
+  background-image: url('../images/heart-active.svg');
+}

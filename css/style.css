@@ -443,8 +443,12 @@ body {
 }
 
 .product-item__title {
-  font-weight: normal;
-  padding: 14px 0 25px;
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding: 11px 20px;
 }
 
 .product-item__favorite {
@@ -497,6 +501,11 @@ body {
   cursor: pointer;
 }
 
+.product-item__img {
+  width: 200px;
+  height: 100%;
+}
+
 .product-item__hover-text {
   padding: 18px 21px;
   width: 230px;
@@ -529,4 +538,49 @@ body {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.07em;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__price {
+  display: none;
+}
+
+.product-item__notify-text {
+  display: none;
+}
+
+.product-item:hover .product-item__notify-text {
+  color: #2F3035;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__notify-text {
+  display: block;
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__basket {
+  display: none;
+}
+
+.product-item__notify-link {
+  display: none;
+}
+
+.product-item:hover .product-item__notify-link {
+  color: #2F3035;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__notify-link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C62CD;
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  border-bottom: 1px solid #1C62CD;
 }

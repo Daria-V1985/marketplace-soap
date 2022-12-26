@@ -426,6 +426,31 @@ body {
   color: #C4C4C4;
 }
 
+.products__title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.products__tabs {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.products__tab {
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.products__tab.tab--active {
+  border-bottom: 2px solid #1C62CD;
+}
+
 .product-item__wrapper {
   position: relative;
   width: 271px;
@@ -548,10 +573,6 @@ body {
   display: none;
 }
 
-.product-item:hover .product-item__notify-text {
-  color: #2F3035;
-}
-
 .product-item__wrapper.product-item__not-available .product-item__notify-text {
   display: block;
   font-family: 'SF Pro Display';
@@ -559,6 +580,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #2F3035;
 }
 
 .product-item__wrapper.product-item__not-available .product-item__basket {

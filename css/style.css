@@ -333,11 +333,11 @@ body {
   font-weight: 700;
 }
 
-.search__content-item {
+.tabs-content {
   display: none;
 }
 
-.search__content-item.tabs-content--active {
+.tabs-content.tabs-content--active {
   display: block;
 }
 

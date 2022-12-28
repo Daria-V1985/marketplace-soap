@@ -16,6 +16,19 @@ $(function(){
     $($(this).attr('href')).addClass('tabs-content--active');
   });
 
+  $('.popular-item__favorite').on('click', function(){
+    $(this).toggleClass('popular-item__favorite--active')
+  });
+
+  $('.popular-slider').slick({
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    touchMove: false,
+    prevArrow: '<button class="popular-slider__slider-btn popular-slider__slider-btnprev"><img src="images/arrow-black_left.svg" alt=""></button>',
+    nextArrow: '<button class="popular-slider__slider-btn popular-slider__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
+  });
+
   $('.product-item__favorite').on('click', function(){
     $(this).toggleClass('product-item__favorite--active')
   });
@@ -28,5 +41,6 @@ $(function(){
     prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black_left.svg" alt=""></button>',
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
   });
+
 
 });

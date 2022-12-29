@@ -659,3 +659,16 @@ body {
   background: #F0F0F4;
   padding: 15px 43px;
 }
+
+/* Подвал */
+
+.footer {
+  background-color: #f0f0f4;
+  width: 100%;
+}
+
+.social-list__link img {
+  width:30px;
+}
+
+

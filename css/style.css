@@ -912,6 +912,7 @@ body {
 }
 
 .aside-filter__tab.tab--active span {
+  display: inline-block;
   padding-bottom: 7px;
   border-bottom: 2px solid #1C62CD;
 }

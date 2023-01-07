@@ -477,6 +477,16 @@ body {
   border-radius: 3px;
   text-align: center;
   padding: 50px 20px 31px;
+  transition: all .2s;
+}
+
+.product-item__wrapper.product-item__wrapper--list {
+  width: 100%;
+}
+
+.product-item__wrapper.product-item__wrapper--list .product-item__hover-text {
+  width: 50%;
+  left:25%;
 }
 
 .product-item__wrapper:hover,
@@ -825,6 +835,11 @@ body {
   margin-left: 8px;
 }
 
+.catalog__filter-btn {
+  display: flex;
+  align-items: center;
+}
+
 .catalog__filter-btn button {
   border: none;
   background-color: transparent;
@@ -837,25 +852,28 @@ body {
   margin-left: 10px;
 }
 
-button.catalog__filter-btngrid {
-
+button.catalog__filter-button {
+  opacity: 0.3;
+  outline: none;
 }
 
-button.catalog__filter-btnline {
-
+button.catalog__filter-button--active {
+  opacity: 1;
 }
 
 .select-item {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-size: 14px;
-  width: 178px;
   line-height: 17px;
   border: 2px solid #E5E5E5;
   margin-right: 34px;
   padding: 8px 10px 8px 20px;
 }
 
-
+.select-item .jq-selectbox__select {
+  color: #2F3035;
+  width: 178px;
+}
 
 .catalog__inner {
   display: flex;
@@ -863,7 +881,7 @@ button.catalog__filter-btnline {
 
 .catalog__inner-aside {
   min-width: 290px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .catalog__inner-list {

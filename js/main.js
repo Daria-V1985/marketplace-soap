@@ -42,5 +42,25 @@ $(function(){
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
   });
 
+  $('.filter__item-drop, .filter__extra').on('click', function(){
+    $(this).toggleClass('filter__item-drop--active');
+    $(this).next().slideToggle(200)
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 100000,
+    max: 900000,
+    from: 200,
+    to: 800,
+    prefix: ""
+  });
 
 });
+
+$(function() {
+
+	$('.filter-style').styler();
+
+});
+

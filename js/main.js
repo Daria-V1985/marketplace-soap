@@ -68,6 +68,17 @@ $(function(){
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
 
+  $(".rate-yo").rateYo({
+    starWidth: "23px",
+    spacing: "7px",
+    normalFill: "#C4C4C4",
+    multiColor: {
+      "startColor": "#FF0000", 
+      "endColor"  : "#1C62CD"  
+  }
+
+  });
+
 });
 
 $(function() {

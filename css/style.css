@@ -44,6 +44,12 @@ body {
   margin-bottom: 80px;
 }
 
+.title {
+  color: #2F3035;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .header__top-inner {
    display: flex;
    justify-content: space-between;
@@ -1499,14 +1505,17 @@ button.catalog__filter-button--active {
   margin-bottom: 20px;
 }
 
-.product-card__btn button {
+.product-card__btn {
+  margin-top: 45px;
+}
+
+.product-card__btn-buy {
   background-color: #1C62CD;
   text-transform: uppercase;
   color: #fff;
   border: 2px solid transparent;
   border-radius: 3px;
   padding: 15px 53px;
-  margin-top: 45px;
   cursor: pointer;
   font-size: 16px;
   line-height: 17px;
@@ -1514,7 +1523,7 @@ button.catalog__filter-button--active {
   letter-spacing: 0.12em;
 }
 
-.product-card__btn:hover button {
+.product-card__btn-buy:hover {
   background-color: #fff;
   color: #1C62CD;
   border: 2px solid #1C62CD;
@@ -1522,4 +1531,106 @@ button.catalog__filter-button--active {
 
 .jq-ry-container {
   display: inline-block;
+}
+
+.card__tabs-box {
+  background: #F0F0F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 23px 0;
+  margin-bottom: 50px;
+}
+
+.card__tab {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+  opacity: 0.6;
+  padding-bottom: 5px;
+}
+
+.card__tab.tab--active {
+  border-bottom: 2px solid #1C62CD;
+  opacity: 1;
+}
+
+.card__top-line {
+  margin-bottom: 10px;  
+}
+
+.card__label-search {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, .7);
+}
+
+.card__input-search {
+  background: #F0F0F4;
+  border-radius: 3px;
+  margin: 0 100px 50px 17px;
+  padding: 9px 37px 9px 17px;
+  border: none;
+}
+
+.card__label-pickup {
+  margin-left: 55px;
+  line-height: 20px;
+  font-size: 17px;
+  color: rgba(47, 48, 53, .7);
+}
+
+.card__list-item {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(47, 48, 53, .7);
+  border-bottom: 1px solid #2F30351F;
+  padding: 20px 0;
+  display: flex;
+}
+
+.card__list-address {
+  width: 219px;
+  margin-right: 81px;
+}
+
+.card__list-workhours {
+  width: 153px;
+  margin-right: 110px;
+}
+
+.workhours {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__list-available {
+  width: 135px;
+  margin-right: 80px;
+}
+
+.card__list-number {
+  width: 105px;
+  margin-right: 132px;
+  text-align: center;
+}
+
+.card__list-button button {
+  background: #1C62CD;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 10px 40px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.card__list-button:hover button {
+  background-color: #fff;
+  color: #1C62CD;
+  border: 2px solid #1C62CD;
 }

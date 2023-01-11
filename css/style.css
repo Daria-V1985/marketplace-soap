@@ -32,6 +32,8 @@ body {
    font-size: 20px;
    line-height: 24px;
    font-weight: 400;
+   overflow-x: hidden;
+   min-width: 320px;
 }
 
 .container {
@@ -59,6 +61,18 @@ body {
    font-weight:700;
 }
 
+.menu-mobile__list {
+  display: none;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.menu__btn {
+  display: none;
+}
+
 .menu__item {
    display: inline-block;
 }
@@ -71,14 +85,14 @@ body {
    display: flex;
 }
 
-.header__adress {
+.header__address {
    margin-right: 60px;
    width: 265px;
    padding-left: 35px;
    position: relative;
 }
 
-.header__adress::before {
+.header__address::before {
    content:"";
    position: absolute;
    background-image: url('../images/map1.svg');

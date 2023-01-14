@@ -34,9 +34,27 @@ $(function(){
     prevArrow: '<button class="popular-slider__slider-btn popular-slider__slider-btnprev"><img src="images/arrow-black_left.svg" alt=""></button>',
     nextArrow: '<button class="popular-slider__slider-btn popular-slider__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
     responsive: [{
-      breakpoint: 969,
+      breakpoint: 1201,
       settings: {
-        arrows: false
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 870,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 641,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
       }
     }]
   });
@@ -53,9 +71,27 @@ $(function(){
     prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black_left.svg" alt=""></button>',
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
     responsive: [{
-      breakpoint: 969,
+      breakpoint: 1201,
       settings: {
-        arrows: false
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 870,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 641,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
       }
     }]
   });

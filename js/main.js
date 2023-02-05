@@ -2,24 +2,27 @@ $(function(){
    
   $('.banner-section__slider').slick({
       dots:true,
-      prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button>',
-      nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button>',
+      prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-black_left.svg" alt=""></button>',
+      nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-black_right.svg" alt=""></button>',
       responsive: [{
       breakpoint: 969,
       settings: {
-        arrows: false
+        arrows: false,
       }
     }]
   });
 
   $('.tab').on('click', function(e){
     e.preventDefault();
-      
+
     $($(this).siblings()).removeClass('tab--active');
-    $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+    $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content--active');
 
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs-content--active');
+
+    $('.popular-slider, .product-slider').slick('setPosition');
+
   });
 
   $('.popular-item__favorite').on('click', function(){
@@ -39,18 +42,20 @@ $(function(){
         arrows: false,
         dots: true,
         slidesToShow: 3,
+        centerMode: true,
       }
     },
     {
-      breakpoint: 870,
+      breakpoint: 1001,
       settings: {
         arrows: false,
         dots: true,
         slidesToShow: 2,
+        centerMode: true,
       }
     },
     {
-      breakpoint: 641,
+      breakpoint: 716,
       settings: {
         arrows: false,
         dots: true,
@@ -76,18 +81,20 @@ $(function(){
         arrows: false,
         dots: true,
         slidesToShow: 3,
+        centerMode: true
       }
     },
     {
-      breakpoint: 870,
+      breakpoint: 1001,
       settings: {
         arrows: false,
         dots: true,
         slidesToShow: 2,
+        centerMode: true
       }
     },
     {
-      breakpoint: 641,
+      breakpoint: 716,
       settings: {
         arrows: false,
         dots: true,
@@ -135,6 +142,15 @@ $(function(){
 
   $('.menu__btn').on('click', function(){
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+  });
+
+  $('.footer__top-drop').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__top-drop--active');
+  });
+
+  $('.aside__btn').on('click', function(){
+    $(this).next().slideToggle();
   });
 
 });

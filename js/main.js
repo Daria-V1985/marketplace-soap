@@ -135,7 +135,7 @@ $(function(){
     normalFill: "#C4C4C4",
     multiColor: {
       "startColor": "#FF0000", 
-      "endColor"  : "#1C62CD"  
+      "endColor"  : "#ad5472"  
   }
 
   });

@@ -671,10 +671,6 @@ body {
   display: none;
 }
 
-.product-item__notify {
-  
-}
-
 .product-item__notify-link,
 .popular-item__notify-link {
   display: none;
@@ -695,10 +691,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*position: absolute;
+  position: absolute;
   bottom: 25px;
-  left: 40px;*/
-  border-bottom: 1px solid #ad5472;
+  left: 0;
+  right: 0;
 }
 
 .popular__more {
@@ -988,8 +984,8 @@ button.catalog__filter-button--active {
 .pagination-list__item.active {
   display: block;
   padding: 8px 15px;
-  border: 2px solid #B47EB2;
-  color: #B47EB2;
+  border: 2px solid #ad5472;
+  color: #ad5472;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
@@ -1021,7 +1017,7 @@ button.catalog__filter-button--active {
 .aside-filter__tab.tab--active span {
   display: inline-block;
   padding-bottom: 7px;
-  border-bottom: 2px solid #B47EB2;
+  border-bottom: 2px solid #ad5472;
 }
 
 .aside-filter__item-drop {
@@ -1095,7 +1091,7 @@ button.catalog__filter-button--active {
 .jq-checkbox.checked,
 .jq-radio.checked {
   border: none;
-  background: #B47EB2;
+  background: #ad5472;
 }
 
 .jq-checkbox.checked .jq-checkbox__div {
@@ -1134,7 +1130,7 @@ button.catalog__filter-button--active {
 .irs--flat .irs-bar {
   top: 24px;
   height: 3px;
-  background-color: #B47EB2;
+  background-color: #ad5472;
 }
 
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
@@ -1149,7 +1145,7 @@ button.catalog__filter-button--active {
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #B47EB2;
+  color: #ad5472;
   text-shadow: none;
   background-color: transparent;
   border-radius: 0;
@@ -1180,14 +1176,14 @@ button.catalog__filter-button--active {
   top: 22px;
   width: 8px;
   height: 8px;
-  background-color: #B47EB2;
+  background-color: #ad5472;
   border-radius: 50%;
 }
 
 .irs--flat .irs-handle>i:first-child,
 .irs--flat .irs-handle.state_hover>i:first-child,
 .irs--flat .irs-handle:hover>i:first-child {
-  background-color: #B47EB2;
+  background-color: #ad5472;
 }
 
 .aside-filter__item-list {
@@ -1293,9 +1289,9 @@ button.catalog__filter-button--active {
   font-size: 14px;
   line-height: 17px;
   padding-top: 18px;
-  border-bottom: 1px solid #B47EB2;
+  border-bottom: 1px solid #ad5472;
   background-color: transparent;
-  color: #B47EB2;
+  color: #ad5472;
 }
 
 .filter-more__btn:hover {
@@ -1348,7 +1344,7 @@ button.catalog__filter-button--active {
 }
 
 .btn-checked .jq-checkbox.checked {
-  background: #B47EB2;
+  background: #ad5472;
   color: #fff;
 }
 
@@ -1385,7 +1381,7 @@ button.catalog__filter-button--active {
 }
 
 .filter-btn__choose--active {
-  background-color: #B47EB2;
+  background-color: #ad5472;
   color: #fff;
 }
 
@@ -1487,7 +1483,7 @@ button.catalog__filter-button--active {
 .product-card__link {
   font-size: 15px;
   line-height: 18px;
-  color: #B47EB2;
+  color: #ad5472;
 }
 
 .product-card__content {
@@ -1533,7 +1529,7 @@ button.catalog__filter-button--active {
 
 .product-card__tab.tab--active {
   opacity: 1;
-  border-bottom: 2px solid #B47EB2;
+  border-bottom: 2px solid #ad5472;
   font-weight: 700;
 }
 
@@ -1559,8 +1555,8 @@ button.catalog__filter-button--active {
 .product-card__more {
   font-size: 14px;
   line-height: 17px;
-  border-bottom: 1px solid #B47EB2;
-  color: #B47EB2;
+  border-bottom: 1px solid #ad5472;
+  color: #ad5472;
   margin-bottom: 40px;
 }
 
@@ -1573,7 +1569,7 @@ button.catalog__filter-button--active {
 }
 
 .product-card__btn-buy {
-  background-color: #B47EB2;
+  background-color: #ad5472;
   text-transform: uppercase;
   color: #fff;
   border: 2px solid transparent;
@@ -1588,8 +1584,12 @@ button.catalog__filter-button--active {
 
 .product-card__btn-buy:hover {
   background-color: #fff;
-  color: #B47EB2;
-  border: 2px solid #B47EB2;
+  color: #ad5472;
+  border: 2px solid #ad5472;
+}
+
+.product-card__btn-mobile {
+  display: none;
 }
 
 .jq-ry-container {
@@ -1614,7 +1614,7 @@ button.catalog__filter-button--active {
 }
 
 .card__tab.tab--active {
-  border-bottom: 2px solid #B47EB2;
+  border-bottom: 2px solid #ad5472;
   opacity: 1;
 }
 
@@ -1680,7 +1680,7 @@ button.catalog__filter-button--active {
 }
 
 .card__list-button button {
-  background: #B47EB2;
+  background: #ad5472;
   border: 2px solid transparent;
   border-radius: 3px;
   padding: 10px 40px;
@@ -1694,8 +1694,8 @@ button.catalog__filter-button--active {
 
 .card__list-button:hover button {
   background-color: #fff;
-  color: #B47EB2;
-  border: 2px solid #B47EB2;
+  color: #ad5472;
+  border: 2px solid #ad5472;
 }
 
 /* Дотсы для слайдера товаров */

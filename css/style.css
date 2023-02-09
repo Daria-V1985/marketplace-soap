@@ -46,12 +46,6 @@ body {
   margin-bottom: 60px;
 }
 
-.title {
-  color: #2F3035;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .header__top-inner {
    display: flex;
    justify-content: space-between;
@@ -1651,6 +1645,12 @@ button.catalog__filter-button--active {
   border-bottom: 1px solid #2F30351F;
   padding: 20px 0;
   display: flex;
+}
+
+.card-list__item-title {
+  color: #2F3035;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .card__list-address {

@@ -275,8 +275,8 @@
 
   <section class="card__tabs page-section">
     <div class="container">
-      <div class="tabs-wrapper tabs-wrapper--no-scroll">
-        <div class="tabs card__tabs-box">
+      <div class="tabs-wrapper">
+        <div class="tabs card__tabs-box mobile-overflow">
           <a class="tab card__tab" href="#card-tab-1">О товаре</a>
           <a class="tab card__tab" href="#card-tab-2">Характеристики</a>
           <a class="tab card__tab" href="#card-tab-3">Отзывы</a>
@@ -285,6 +285,7 @@
           <a class="tab card__tab" href="#card-tab-6">Cервис</a>
           <a class="tab card__tab" href="#card-tab-7">Гарантия</a>
         </div>
+      </div>
         <div class="tabs-container">
           <div id="card-tab-1" class="card__tab-content tabs-content">content-1</div>
           <div id="card-tab-2" class="card__tab-content tabs-content">content-2</div>
@@ -305,12 +306,12 @@
                 </label>
               </div>
               <ul class="card__list">
-                <li class="card__list-item">
-                  <div class="title card__list-address">Адрес</div>
-                  <div class="title card__list-workhours">Режим работы</div>
-                  <div class="title card__list-available">Доступно</div>
-                  <div class="title card__list-number">Количество</div>
-                  <div class="title"></div>
+                <li class="card__list-item card-list__item-title">
+                  <div class="card__list-address">Адрес</div>
+                  <div class="card__list-workhours">Режим работы</div>
+                  <div class="card__list-available">Доступно</div>
+                  <div class="card__list-number">Количество</div>
+                  <div></div>
                 </li>
                 <li class="card__list-item">
                   <div class="card__list-address"><span>Москва, ул. Науки 25</span></div>
@@ -383,7 +384,6 @@
           <div id="card-tab-6" class="card__tab-content tabs-content">content-6</div>
           <div id="card-tab-7" class="card__tab-content tabs-content">content-7</div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -393,7 +393,7 @@
       <div class="products__inner">
         <div class="tabs-wrapper">
           <div class="tabs products__tabs mobile-overflow">
-            <a class="tab products__tab tab--active" href="#product-tab-1">сухоцветы</a>
+            <a class="tab products__tab tab--active" href="#product-tab-1">вощина для свечей</a>
             <a class="tab products__tab" href="#product-tab-2">базовые масла</a>
           </div>
         </div>

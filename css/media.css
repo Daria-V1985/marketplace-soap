@@ -203,7 +203,12 @@
     margin-right: 0;
   }
 
-  
+  .card__top-line label {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
 
 
 }
@@ -221,6 +226,35 @@
 
   .catalog__filter-btn {
     margin-top: 25px;
+  }
+
+  .card__list-item {
+    display: block;
+  }
+
+  .card__list-item div {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .workhours span {
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .card-list__item-title {
+    display: none;
+  }
+
+}
+
+@media(max-width: 800px) {
+
+  .card__tab {
+    font-size: 17px;
+    line-height: 21px;
   }
 
 }
@@ -269,7 +303,7 @@
     width: 80%;
     left: 10%;
   }
-
+  
 
 }
 
@@ -319,7 +353,8 @@
 
   .tabs-wrapper,
   .breadcrumbs__inner,
-  .filter-items__inner {
+  .filter-items__inner,
+  .card__tabs-box {
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -327,6 +362,19 @@
   .mobile-overflow {
     width: 700px;
     padding: 12px 0;
+  }
+
+  .card__tabs-box {
+    margin-bottom: 20px;
+  }
+
+  .card__tab-form {
+    margin-top: 30px;
+  }
+
+  .card__label-search {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .footer__top-inner {
@@ -481,6 +529,24 @@
     margin: 0;
   }
 
+  .card__list-item div {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .workhours span {
+    padding-left: 0;
+  }
 
 }
+
+@media(max-width: 340px) {
+
+  .card__input-search {
+    margin: 17px 85px 50px 0;
+  }
+
+}
+
+
 

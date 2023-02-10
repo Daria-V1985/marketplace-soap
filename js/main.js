@@ -110,8 +110,8 @@ $(function(){
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
-    min: 100000,
-    max: 900000,
+    min: 100,
+    max: 10000,
     from: 200,
     to: 800,
     prefix: ""

@@ -1437,6 +1437,10 @@ button.catalog__filter-button--active {
   justify-content: space-between;
 }
 
+.product-card__img {
+  width: 500px;
+}
+
 .product-card__img-box {
   font-family: 'Barlow', sans-serif;
   width: 500px;

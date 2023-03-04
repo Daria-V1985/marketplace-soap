@@ -499,7 +499,7 @@
   }
 
   .product-card__btn {
-    margin: 20px auto;
+    display: none;
   }
 
   .product-card__btn-mobile {

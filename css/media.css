@@ -457,7 +457,7 @@
   }
 
   .product-card__content {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     order: -1;
   }
 
@@ -498,12 +498,8 @@
     display: none;
   }
 
-  .product-card__more {
-    margin-bottom: 20px;
-  }
-
   .product-card__btn {
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .product-card__btn-mobile {

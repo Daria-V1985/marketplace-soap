@@ -457,7 +457,7 @@
   }
 
   .product-card__content {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     order: -1;
   }
 
@@ -496,6 +496,10 @@
 
   .product-card__tabs {
     display: none;
+  }
+
+  .product-card__more {
+    margin-bottom: 20px;
   }
 
   .product-card__btn {
